@@ -1,5 +1,5 @@
 import type { Request,Response } from "express";
-import Url from "../models/user.model.js";
+import Url from "../models/url.model.js";
 
 export const createURL = async (req: Request, res: Response) => {
 
