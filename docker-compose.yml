@@ -1,9 +1,7 @@
-
 services:
-
   db:
     image: mongo:latest
-    container_name: mongo_db
+    container_name: mongodb
     ports:
       - "27017:27017"
     volumes:
@@ -12,7 +10,7 @@ services:
       - MONGO_INITDB_ROOT_USERNAME=abhinay
       - MONGO_INITDB_ROOT_PASSWORD=password
       - MONGO_INITDB_DATABASE=urlshortener
-      
+  
 volumes:
   mongo_data:
       
