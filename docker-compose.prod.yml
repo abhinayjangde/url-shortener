@@ -16,7 +16,8 @@ services:
       - MONGO_INITDB_ROOT_USERNAME={DB_USERNAME}
       - MONGO_INITDB_ROOT_PASSWORD={DB_PASSWORD}
       - MONGO_INITDB_DATABASE={DB_NAME}
-
+  redis:
+    image: redis:latest
 volumes:
   mongo_data:
       

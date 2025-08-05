@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "2d626487-b534-45cb-8cd3-d15932bca865",
+		"name": "url-shortner",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20999181"
+	},
+	"item": [
+		{
+			"name": "create-url",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"originalUrl\":\"https://www.codebhaiya.com/blog/how-to-install-and-configure-mongodb-for-production\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/create-url",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"create-url"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "redirect-url",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/R943f3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"R943f3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
