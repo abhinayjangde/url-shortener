@@ -10,7 +10,11 @@ services:
       - MONGO_INITDB_ROOT_USERNAME=abhinay
       - MONGO_INITDB_ROOT_PASSWORD=password
       - MONGO_INITDB_DATABASE=urlshortener
-  
+  redis:
+    image: redis:latest
+    container_name: redis
+    ports:
+      - "6379:6379"
 volumes:
   mongo_data:
-      
+    driver: local
